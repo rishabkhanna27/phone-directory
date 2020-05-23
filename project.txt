@@ -1,0 +1,96 @@
+Project brief
+...................................
+In this project, you will work on developing REST API 
+endpoints of various functionalities required for a 
+Music Hoster App from scratch. In order to observe the 
+functionality of the endpoints, you will use the Swagger 
+user interface and store the data in the PostgreSQL database. 
+Also, the project has to be implemented using Java Persistence API (JPA).
+
+
+
+4 Controllers
+...................................
+Signup Up 
+Authntication
+Music Upload
+Admin
+
+
+5 End Points
+....................................
+usersignup
+auth/login
+musicupload
+music/id
+music/upload/id
+
+
+Controllers
+.....................................
+Signup-controller: In this controller, the user will able to sign up for an account.
+
+Authentication-controller: After signing up, the user needs to sign in. 
+This controller authenticates the user based on the credentials provided. 
+After authentication, the user will be given an ‘access token’, 
+which will be required to perform any further operation.
+
+Music-upload-controller: Using the ‘access token’, 
+the user can upload music files through this controller. 
+But the music file is not ‘ACTIVE’ until reviewed by the admin.
+
+Admin-controller: The admin needs to review all the music files uploaded by users. 
+This controller provides the admin with the details about all the music files. 
+Once the admin has reviewed the music file, he can update it (if needed) and 
+make it ‘ACTIVE’ through this controller.
+
+
+Controller
+..........................................
+The Controller is responsible for controlling the application logic and 
+acts as the coordinator between the View and the Model. 
+The Controller receives an input from the users via the View, 
+then processes the user's data with the help of Model and passes the results back to the View.
+
+
+
+Object-Relational Mapping (ORM) 
+............................................
+is a technique that lets you query and manipulate data from a database using 
+an object-oriented paradigm. When talking about ORM, most people are 
+referring to a library that implements the Object-Relational Mapping technique, 
+hence the phrase "an ORM".
+
+An ORM library is a completely ordinary library written in your language of choice 
+that encapsulates the code needed to manipulate the data, so you don't use SQL 
+anymore; you interact directly with an object in the same language you're using.
+
+
+
+@Service
+..................................................
+Service layer provides code modularity,the business logic and rules are specified in the service layer
+
+
+
+A JSON Web Token (JWT) 
+..................................................
+is an open standard (RFC 7519) that defines a compact and self-contained 
+way for securely transmitting information between parties as a JSON object. 
+This information can be verified and trusted because it is digitally signed. 
+JWTs can be signed using a secret or a public/private key pair.
+
+
+
+DAO
+....................................................
+DAO stands for Data Access Object. DAO Design Pattern is used to 
+separate the data persistence logic in a separate layer. This way, 
+the service remains completely in dark about how the low-level operations 
+to access the database is done. This is known as the principle of Separation of Logic.
+
+
+@Entity
+......................................................
+The @Entity annotation specifies that the class is an entity and is mapped to a database table.
+
